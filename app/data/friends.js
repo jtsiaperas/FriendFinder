@@ -35,15 +35,15 @@ function getBestFriend(myself, friendsList) {
     return friends[bestFriend];
 }
 
+//Testing:
+// friendsList.push(new Friend("Jonas","N/A",[5,5,5,5,5,5,5,5]));
 
-friendsList.push(new Friend("Jonas","N/A",[5,5,5,5,5,5,5,5]));
+// friendsList.push(new Friend("Jose","N/A",[4,4,4,4,4,4,4,4]));
 
-friendsList.push(new Friend("Jose","N/A",[4,4,4,4,4,4,4,4]));
+// friendsList.push(new Friend("Jules","N/A",[1,1,1,1,1,1,1,1]));
 
-friendsList.push(new Friend("Jules","N/A",[1,1,1,1,1,1,1,1]));
+// var me = new Friend("Austin","N/A",[3,3,3,3,3,3,3,3]);
 
-var me = new Friend("Austin","N/A",[3,3,3,3,3,3,3,3]);
+// var result = getBestFriend(me,friendsList);
 
-var result = getBestFriend(me,friendsList);
-
-console.log(result);
+// console.log(result);
