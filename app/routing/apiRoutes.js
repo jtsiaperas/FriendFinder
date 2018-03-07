@@ -11,7 +11,8 @@ module.exports = function(app){
     });
     
     app.post("/api/friends", function(req,res){
-        var newUser = new friends.Friend(req.body.name,req.body.image,req.body.scores);
+        console.log(req.body);
+        var newUser = new friends.Friend(req.body.name,req.body.photo,req.body["scores[]"]);
         res.json(friends.getBestFriend(newUser,friends.friendsList));
     });
 
