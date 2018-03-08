@@ -5,7 +5,6 @@
   <title>Star Wars - Express</title>
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
- 
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -17,15 +16,16 @@
         display: block; 
         }
     }
+
 </style>
 <body>
 
   <div class="container">
     <div class="jumbotron">
-      <h1>Star Wars Express</h1>
-      <h3>The greatest resource in the galaxy for Star Wars statistics!</h3>
+      <h1>BestFriendFinder</h1>
+      <h3>Find your new best friend now!</h3>
       <hr>
-      <a href="/"><button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-eye-open"></span> View Characters</button></a>
+      <a href="/"><button type="button" class="btn btn-danger btn-lg"><span class="glyphicons glyphicons-home"></span>Home</button></a>
     </div>
     <div class="row">
 
@@ -36,18 +36,18 @@
             <h3 class="panel-title"><strong>Your Profile</strong></h3>
           </div>
           <div class="panel-body">
-            <form method="POST" role="form" class = "needs-validation" novalidate>
+            <form method="POST" role="form">
 
               <div class="form-group">
                 <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter name here" required>
+                <input type="text" class="form-control needs-validation" id="name" placeholder="Enter name here" required>
               </div>
-
+              <div class = "invalid-feedback">Please enter your name!</div>
               <div class="form-group">
                 <label for="picture">Picture URL</label>
-                <input type="text" class="form-control" id="picture" placeholder="Enter your image url here" required>
+                <input type="text" class="form-control needs-validation" id="picture" placeholder="Enter your image url here" required>
               </div>
-
+               <div class = "invalid-feedback">Please enter a link to your picture!</div>
                 <div class = "page-header"><h3><strong>Personality Survey</strong></h3>
                     <p>Please select the answer that most fits</p>
                 </div>
@@ -58,307 +58,316 @@
                     <div class = "card-header">I love going to crowded bars</div>
                     <div class = "card-body">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question1" type="radio" value="1" required>
+                        <input class="form-check-input needs-validation" name="question1" type="radio" value="1" required>
                         <label class="form-check-label" for="radio1">Strongly Disagree</label>
                     </div>
-                
+                  
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question1" type="radio" value="2" required>
+                        <input class="form-check-input needs-validation" name="question1" type="radio" value="2" required>
                         <label class="form-check-label" for="radio2">Somewhat Disagree</label>
                     </div>
                 
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question1" type="radio" value="3" required>
+                        <input class="form-check-input needs-validation" name="question1" type="radio" value="3" required>
                         <label class="form-check-label" for="radio3">Neutral</label>
                     </div>
                 
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question1" type="radio" value="4" required>
+                        <input class="form-check-input needs-validation" name="question1" type="radio" value="4" required>
                         <label class="form-check-label" for="radio4">Somewhat Agree</label>
                     </div>
                 
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question1" type="radio" value="5" required>
+                        <input class="form-check-input needs-validation" name="question1" type="radio" value="5" required>
                         <label class="form-check-label" for="radio5">Strongly Agree</label>
                     </div> 
                     </div>
                     </div>
-                    
+                    <div class = "invalid-feedback">Please answer all questions!</div> 
                     <div class = "card"> 
                     <div class = "card-header">I would love to spend an entire day playing boardgames</div>
                     <div class = "card-body">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question2" type="radio" value="1" required>
+                        <input class="form-check-input needs-validation" name="question2" type="radio" value="1" required>
                         <label class="form-check-label" for="radio1">Strongly Disagree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question2" type="radio" value="2" required>
+                        <input class="form-check-input needs-validation" name="question2" type="radio" value="2" required>
                         <label class="form-check-label" for="radio2">Somewhat Disagree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question2" type="radio" value="3" required>
+                        <input class="form-check-input needs-validation" name="question2" type="radio" value="3" required>
                         <label class="form-check-label" for="radio3">Neutral</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question2" type="radio" value="4" required>
+                        <input class="form-check-input needs-validation" name="question2" type="radio" value="4" required>
                         <label class="form-check-label" for="radio4">Somewhat Agree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question2" type="radio" value="5" required>
+                        <input class="form-check-input needs-validation" name="question2" type="radio" value="5" required>
                         <label class="form-check-label" for="radio5">Strongly Agree</label>
                     </div> 
                     </div>
                     </div>
-
+                    <div class = "invalid-feedback">Please answer all questions!</div>
+                    
                     <div class = "card"> 
                     <div class = "card-header">Cats are great pets</div>
                     <div class = "card-body">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question3" type="radio" value="1" required>
+                        <input class="form-check-input needs-validation" name="question3" type="radio" value="1" required>
                         <label class="form-check-label" for="radio1">Strongly Disagree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question3" type="radio" value="2" required>
+                        <input class="form-check-input needs-validation" name="question3" type="radio" value="2" required>
                         <label class="form-check-label" for="radio2">Somewhat Disagree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question3" type="radio" value="3" required>
+                        <input class="form-check-input needs-validation" name="question3" type="radio" value="3" required>
                         <label class="form-check-label" for="radio3">Neutral</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question3" type="radio" value="4" required>
+                        <input class="form-check-input needs-validation" name="question3" type="radio" value="4" required>
                         <label class="form-check-label" for="radio4">Somewhat Agree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question3" type="radio" value="5" required>
+                        <input class="form-check-input needs-validation" name="question3" type="radio" value="5" required>
                         <label class="form-check-label" for="radio5">Strongly Agree</label>
                     </div> 
                     </div>
                     </div>
-                
+                    <div class = "invalid-feedback">Please answer all questions!</div>
+
                     <div class = "card"> 
                     <div class = "card-header">Dogs are better than cats</div>
                     <div class = "card-body">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question4" type="radio" value="1" required>
+                        <input class="form-check-input needs-validation" name="question4" type="radio" value="1" required>
                         <label class="form-check-label" for="radio1">Strongly Disagree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question4" type="radio" value="2" required>
+                        <input class="form-check-input needs-validation" name="question4" type="radio" value="2" required>
                         <label class="form-check-label" for="radio2">Somewhat Disagree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question4" type="radio" value="3" required>
+                        <input class="form-check-input needs-validation" name="question4" type="radio" value="3" required>
                         <label class="form-check-label" for="radio3">Neutral</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question4" type="radio" value="4" required>
+                        <input class="form-check-input needs-validation" name="question4" type="radio" value="4" required>
                         <label class="form-check-label" for="radio4">Somewhat Agree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question4" type="radio" value="5" required>
+                        <input class="form-check-input needs-validation" name="question4" type="radio" value="5" required>
                         <label class="form-check-label" for="radio5">Strongly Agree</label>
                     </div> 
                     </div>
                     </div>
-                
+                    <div class = "invalid-feedback">Please answer all questions!</div>
+                    
                     <div class = "card">                 
                     <div class = "card-header">Talking during movies is acceptable behavior</div>
                     <div class = "card-body"> 
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question5" type="radio" value="1" required>
+                        <input class="form-check-input needs-validation" name="question5" type="radio" value="1" required>
                         <label class="form-check-label" for="radio1">Strongly Disagree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question5" type="radio" value="2" required>
+                        <input class="form-check-input needs-validation" name="question5" type="radio" value="2" required>
                         <label class="form-check-label" for="radio2">Somewhat Disagree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question5" type="radio" value="3" required>
+                        <input class="form-check-input needs-validation" name="question5" type="radio" value="3" required>
                         <label class="form-check-label" for="radio3">Neutral</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question5" type="radio" value="4" required>
+                        <input class="form-check-input needs-validation" name="question5" type="radio" value="4" required>
                         <label class="form-check-label" for="radio4">Somewhat Agree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question5" type="radio" value="5" required>
+                        <input class="form-check-input needs-validation" name="question5" type="radio" value="5" required>
                         <label class="form-check-label" for="radio5">Strongly Agree</label>
                     </div> 
                     </div>
                     </div>
-                
+                    <div class = "invalid-feedback">Please answer all questions!</div>
+
                     <div class = "card">                
                     <div class = "card-header">Chili powder is way too spicy</div>
                     <div class = "card-body">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question6" type="radio" value="1" required>
+                        <input class="form-check-input needs-validation" name="question6" type="radio" value="1" required>
                         <label class="form-check-label" for="radio1">Strongly Disagree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question6" type="radio" value="2" required>
+                        <input class="form-check-input needs-validation" name="question6" type="radio" value="2" required>
                         <label class="form-check-label" for="radio2">Somewhat Disagree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question6" type="radio" value="3" required>
+                        <input class="form-check-input needs-validation" name="question6" type="radio" value="3" required>
                         <label class="form-check-label" for="radio3">Neutral</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question6" type="radio" value="4" required>
+                        <input class="form-check-input needs-validation" name="question6" type="radio" value="4" required>
                         <label class="form-check-label" for="radio4">Somewhat Agree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question6" type="radio" value="5" required>
+                        <input class="form-check-input needs-validation" name="question6" type="radio" value="5" required>
                         <label class="form-check-label" for="radio5">Strongly Agree</label>
                     </div> 
                     </div>
                     </div>
-                
+                    <div class = "invalid-feedback">Please answer all questions!</div>
+
                     <div class = "card"> 
                     <div class = "card-header">The only videogames I like are sports games and Call of Duty</div>
                     <div class = "card-body">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question7" type="radio" value="1" required>
+                        <input class="form-check-input needs-validation" name="question7" type="radio" value="1" required>
                         <label class="form-check-label" for="radio1">Strongly Disagree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question7" type="radio" value="2" required>
+                        <input class="form-check-input needs-validation" name="question7" type="radio" value="2" required>
                         <label class="form-check-label" for="radio2">Somewhat Disagree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question7" type="radio" value="3" required>
+                        <input class="form-check-input needs-validation" name="question7" type="radio" value="3" required>
                         <label class="form-check-label" for="radio3">Neutral</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question7" type="radio" value="4" required>
+                        <input class="form-check-input needs-validation" name="question7" type="radio" value="4" required>
                         <label class="form-check-label" for="radio4">Somewhat Agree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question7" type="radio" value="5" required>
+                        <input class="form-check-input needs-validation" name="question7" type="radio" value="5" required>
                         <label class="form-check-label" for="radio5">Strongly Agree</label>
                     </div> 
                     </div>
                     </div>                
-                
+                    <div class = "invalid-feedback">Please answer all questions!</div>
+                    
                     <div class = "card"> 
                     <div class = "card-header">I would love to spend an entire day exercising</div>
                     <div class = "card-body">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question8" type="radio" value="1" required>
+                        <input class="form-check-input needs-validation" name="question8" type="radio" value="1" required>
                         <label class="form-check-label" for="radio1">Strongly Disagree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question8" type="radio" value="2" required>
+                        <input class="form-check-input needs-validation" name="question8" type="radio" value="2" required>
                         <label class="form-check-label" for="radio2">Somewhat Disagree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question8" type="radio" value="3" required>
+                        <input class="form-check-input needs-validation" name="question8" type="radio" value="3" required>
                         <label class="form-check-label" for="radio3">Neutral</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question8" type="radio" value="4" required>
+                        <input class="form-check-input needs-validation" name="question8" type="radio" value="4" required>
                         <label class="form-check-label" for="radio4">Somewhat Agree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question8" type="radio" value="5" required>
+                        <input class="form-check-input needs-validation" name="question8" type="radio" value="5" required>
                         <label class="form-check-label" for="radio5">Strongly Agree</label>
                     </div> 
                     </div>
                     </div>
-                    
+                    <div class = "invalid-feedback">Please answer all questions!</div>
+
                     <div class = "card"> 
                     <div class = "card-header">I love watching trashy reality shows</div>
                     <div class = "card-body">
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question9" type="radio" value="1" required>
+                        <input class="form-check-input needs-validation" name="question9" type="radio" value="1" required>
                         <label class="form-check-label" for="radio1">Strongly Disagree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question9" type="radio" value="2" required>
+                        <input class="form-check-input needs-validation" name="question9" type="radio" value="2" required>
                         <label class="form-check-label" for="radio2">Somewhat Disagree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question9" type="radio" value="3" required>
+                        <input class="form-check-input needs-validation" name="question9" type="radio" value="3" required>
                         <label class="form-check-label" for="radio3">Neutral</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question9" type="radio" value="4" required>
+                        <input class="form-check-input needs-validation" name="question9" type="radio" value="4" required>
                         <label class="form-check-label" for="radio4">Somewhat Agree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question9" type="radio" value="5" required>
+                        <input class="form-check-input needs-validation" name="question9" type="radio" value="5" required>
                         <label class="form-check-label" for="radio5">Strongly Agree</label>
                     </div> 
                     </div>
                     </div>
-                
+                    <div class = "invalid-feedback">Please answer all questions!</div>
+
                     <div class = "card"> 
                     <div class = "card-header">I am totally quirky and cute</div>
                     <div class = "card-body"> 
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question10" type="radio" value="1" required>
+                        <input class="form-check-input needs-validation" name="question10" type="radio" value="1" required>
                         <label class="form-check-label" for="radio1">Strongly Disagree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question10" type="radio" value="2" required>
+                        <input class="form-check-input needs-validation" name="question10" type="radio" value="2" required>
                         <label class="form-check-label" for="radio2">Somewhat Disagree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question10" type="radio" value="3" required>
+                        <input class="form-check-input needs-validation" name="question10" type="radio" value="3" required>
                         <label class="form-check-label" for="radio3">Neutral</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question10" type="radio" value="4" required>
+                        <input class="form-check-input needs-validation" name="question10" type="radio" value="4" required>
                         <label class="form-check-label" for="radio4">Somewhat Agree</label>
                     </div>
                     
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" name="question10" type="radio" value="5" required>
+                        <input class="form-check-input needs-validation" name="question10" type="radio" value="5" required>
                         <label class="form-check-label" for="radio5">Strongly Agree</label>
                     </div>
                 </div> 
                 </div>
-                </div>
+                <div class = "invalid-feedback">Please answer all questions!</div>    
+            </div>
                
-            </form>
+            
             <br>
             <button type="submit" class="btn btn-primary btn-md" id="find-btn"><span class="glyphicons glyphicons-user"></span> Find your new best friend!</button>
-            
+        </form>
         </div>
         </div>
 
@@ -385,30 +394,47 @@
     </div>
   </div>
   <script type="text/javascript">
-    //submits form data on click
-    $("#find-btn").on("click", function(event) {
-      event.preventDefault();
-      var scores = [];
-      for (var i = 1; i<11; i++)
-      {
-        var getRadio = "input[name= question"+i+"]:checked";
-        scores.push($(getRadio).val());
-      }
-      console.log(scores);
-      var newUser = {
-        name: $("#name").val(),
-        photo: $("#picture").val(),
-      };
-      newUser.scores = scores;
-      console.log(newUser);
-      $.post("/api/friends", newUser).then(function(data){
-      var bestFriend = data;
-        console.log(bestFriend);
-      $("#friendName").text(bestFriend.name);
-      $("#friendPic").attr("src",bestFriend.photo);
-      $('#bestFriend').modal("show");
-      });
+   (function() {
+   'use strict';
+    window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('POST', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
     });
+    }, false);
+    })();
+
+    // $("#find-btn").on("click", function(event) {
+    //   event.preventDefault();
+    //   var scores = [];
+    //   for (var i = 1; i<11; i++)
+    //   {
+    //     var getRadio = "input[name= question"+i+"]:checked";
+    //     scores.push($(getRadio).val());
+    //   }
+    //   console.log(scores);
+    //   var newUser = {
+    //     name: $("#name").val(),
+    //     photo: $("#picture").val(),
+    //   };
+    //   newUser.scores = scores;
+    //   console.log(newUser);
+    //   $.post("/api/friends", newUser).then(function(data){
+    //   var bestFriend = data;
+    //     console.log(bestFriend);
+    //   $("#friendName").text(bestFriend.name);
+    //   $("#friendPic").attr("src",bestFriend.photo);
+    //   $('#bestFriend').modal("show");
+    //   });
+    // });
   </script>
 
 </body>
