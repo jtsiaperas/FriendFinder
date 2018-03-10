@@ -36,7 +36,7 @@ function getBestFriend(myself, friendsList) {
 }
 
 //Testing:
-friendsList.push(new Friend("Jonas","N/A",[5,5,5,5,5,5,5,5,5,5]));
+friendsList.push(new Friend("Austin Tsiaperas","https://i.imgur.com/Zwkv0Wn.jpg",[1,5,5,2,1,1,1,1,2,4]));
 
 // friendsList.push(new Friend("Jose","N/A",[4,4,4,4,4,4,4,4]));
 
