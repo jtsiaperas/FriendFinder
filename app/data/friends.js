@@ -32,6 +32,7 @@ function getBestFriend(myself, friendsList) {
         }
     }
     console.log(friends[bestFriend]);
+    friendsList.push(myself);
     return friends[bestFriend];
 }
 

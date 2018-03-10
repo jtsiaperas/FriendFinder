@@ -39,7 +39,7 @@
           </div>
           <div class="panel-body">
             <!-- Post defaults to /survey, which is not what I want. The action callback enables posting the way I want to do it -->
-            <form action= "JavaScript:postIt()" method="POST" role="form">
+            <form action= "JavaScript:postIt()" id = "survey" method="POST" role="form">
 
                 <div class="form-group">
                     <label for="name">Name</label>
@@ -390,7 +390,7 @@
           </button>
         </div>
         <div class="modal-body">
-         <img id="friendPic" src="" alt="Your new friend's picture">
+         <img id="friendPic" class = "img-fluid" src="" alt="Your new friend's picture">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -445,6 +445,7 @@
             $("#friendPic").attr("src",bestFriend.photo);
 
             $('#bestFriend').modal();
+            document.getElementById("survey").reset();
         });
     }
   </script>

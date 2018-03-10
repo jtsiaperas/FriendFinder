@@ -13,7 +13,6 @@ module.exports = function(app){
     app.post("/api/friends", function(req,res){
         console.log(req.body);
         var newUser = new friends.Friend(req.body.name,req.body.photo,req.body["scores[]"]);
-        friendsList.push(newUser);
         res.json(friends.getBestFriend(newUser,friends.friendsList));
     });
 
